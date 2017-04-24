@@ -80,5 +80,11 @@ Trailer Header//请求体后加的额外headers，
 
 RemoteAddr string //记录发送请求的ip和端口，一般供日志使用
 
+RequestURI string //未被修改的 Request-URI
 
+TLS \*tls.ConnectionState//记录接受到请求的TLS，
+
+Cancel &lt;-chan struct{}//只有客户端可用，表示连接是因为取消关闭的
+
+｝
 
