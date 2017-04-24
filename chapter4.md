@@ -16,37 +16,53 @@ URL \*url.URL//区分URL是被服务端请求的还是客户端发出的请求
 
 Proto      string // "HTTP/1.0"  //http 版本 HTTP/1.1 or HTTP/2
 
-	ProtoMajor int    // 1
+```
+ProtoMajor int    // 1
 
-	ProtoMinor int    // 0
+ProtoMinor int    // 0
+```
 
 Header Header //请求头，如果服务器收到请求如下：
 
-       //	Host: example.com
+```
+   //    Host: example.com
 
-	//	accept-encoding: gzip, deflate
+//    accept-encoding: gzip, deflate
 
-	//	Accept-Language: en-us
+//    Accept-Language: en-us
 
-	//	fOO: Bar
+//    fOO: Bar
 
-	//	foo: two
+//    foo: two
 
-	//
+//
+```
 
 存储格式如下
 
-	//
+```
+//
 
-	//	Header = map\[string\]\[\]string{
+//    Header = map\[string\]\[\]string{
 
-	//		"Accept-Encoding": {"gzip, deflate"},
+//        "Accept-Encoding": {"gzip, deflate"},
 
-	//		"Accept-Language": {"en-us"},
+//        "Accept-Language": {"en-us"},
 
-	//		"Foo": {"Bar", "two"},
+//        "Foo": {"Bar", "two"},
 
-	//	}
+//    }
+```
+
+对于客户端请求头存在Request.Host，而不是Header map
+
+http协议定义头部不区分大小写，请求解析器，把它解析成驼峰格式
+
+
+
+对于客户端请求，请求头部，比如Content-Length和Connection会被自动填写，Header里面的内容会被忽略
+
+ 
 
 
 
