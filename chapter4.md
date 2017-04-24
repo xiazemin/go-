@@ -72,3 +72,9 @@ Host string //"host:port"
 
 Form url.Values  // 包含URL里面的参数和POST或者PATH  PUT 参数，只有ParseForm 方法被调用后才有用
 
+PostForm url.Values //POST或者PATH  PUT 参数，只有ParseForm 方法被调用后才有用
+
+MultipartForm \*multipart.Form //解析multipart form 包括文件上传
+
+
+
