@@ -68,5 +68,7 @@ TransferEncoding \[\]string //从最外到最内编码方式
 
 Close bool //服务端会自动处理，不关注这个字段，客户端会看 Transport.DisableKeepAlives 是否被设置
 
+Host string //"host:port"   
 
+Form url.Values 
 
