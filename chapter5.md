@@ -23,7 +23,7 @@ Host     string    // host or host:port
 
 Path     string
 
-RawPath  string // encoded path hint \(Go 1.5 and later only; see EscapedPath method\)
+RawPath  string // encoded path hint \(Go 1.5 and later only; see EscapedPath method\)//加密后的url
 
 RawQuery string // encoded query values, without '?'
 
