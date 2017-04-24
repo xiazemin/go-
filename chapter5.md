@@ -6,9 +6,9 @@ package url
 
 标示一个已经解析的URL
 
-通用的表达格式是：	scheme://\[userinfo@\]host/path\[?query\]\[\#fragment\]
+通用的表达格式是：    scheme://\[userinfo@\]host/path\[?query\]\[\#fragment\]
 
-
+path 是解码后的格式，/%47%6f%2f 标示成／go／
 
 type URL struct {
 
