@@ -2,6 +2,8 @@
 
 /src/net/http/server.go
 
+package http
+
 供http句柄使用的返回结构体
 
 type ResponseWriter interface｛
