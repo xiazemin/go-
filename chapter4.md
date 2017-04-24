@@ -62,5 +62,11 @@ http协议定义头部不区分大小写，请求解析器，把它解析成驼�
 
 Body io.ReadCloser//请需求内容，当返回EOF符的时候会关闭请求体，但是没必要关闭连接
 
+ContentLength int64 // 内容长度，－1标示未知
+
+TransferEncoding \[\]string //从最外到最内编码方式
+
+Close bool //服务端会自动处理，不关注这个字段，客户端会看 Transport.DisableKeepAlives 是否被设置
+
 
 
