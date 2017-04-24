@@ -60,8 +60,6 @@ http协议定义头部不区分大小写，请求解析器，把它解析成驼�
 
 对于客户端请求，请求头部，比如Content-Length和Connection会被自动填写，Header里面的内容会被忽略
 
-
-
 Body io.ReadCloser//请需求内容，当返回EOF符的时候会关闭请求体，但是没必要关闭连接
 
 
