@@ -1,4 +1,4 @@
-# First Chapter
+# 环境搭建
 
 1. **准备**
 
@@ -20,7 +20,7 @@
     find . -print \| sed -e 's;\[^/\]\*/;\|\_\_\_\_;g;s;\_\_\_\_\|; \|;g'
    ```
 
-    文件夹
+   文件夹
 
 |  | 描述 |
 | :--- | :--- |
@@ -33,6 +33,5 @@
 | [/src/lib9/](https://github.com/golang/go/tree/release-branch.go1.4/src/lib9),[/src/libbio](https://github.com/golang/go/tree/release-branch.go1.4/src/libbio),[/src/liblink](https://github.com/golang/go/tree/release-branch.go1.4/src/liblink) | 在编译器、链接器、以及运行时中用到的不同库。 |
 | [/src/runtime/](https://github.com/golang/go/tree/release-branch.go1.4/src/runtime) | 这部分包含了 Go 语言最重要的包，所有程序都默认导入这些包。其中包括所有的运行时功能，比如内存管理、垃圾回收、Go 协程（goroutine）等等。 |
 
-  
 
 
