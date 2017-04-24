@@ -76,5 +76,9 @@ PostForm url.Values //POST或者PATH  PUT 参数，只有ParseForm 方法被调�
 
 MultipartForm \*multipart.Form //解析multipart form 包括文件上传
 
+Trailer Header//请求体后加的额外headers，
+
+RemoteAddr string //记录发送请求的ip和端口，一般供日志使用
+
 
 
